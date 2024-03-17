@@ -5,12 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/fonts/pt_sans.css">
+    <link rel="stylesheet" href="./style/fonts/rubik.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/quiz_start.css">
     <script src="./script/script.js"></script>
 </head>
 
 <body>
-
+    <div class="container">
+        <div class="quiz-start-container row h-100">
+            <div class="quiz-start-left-container col-lg-2 col-sm-3 col-xs-3 col-4">
+                <img src="./img/logo.png" alt="logo">
+                <div class="quiz-category-container">
+                    <div class="active-category"><span>HTML</span></div>
+                    <div class="text-secondary"><span>CSS</span></div>
+                    <div class="text-secondary"><span>JS</span></div>
+                    <div class="text-secondary"><span>JAVA</span></div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-sm-9 col-xs-9 col-8 p-lg-5 p-md-5 p-sm-4 p-3">
+                <div class="quiz-start-right-container h-100">
+                    <div>
+                        <h1>Welcome to<br>The Awesome HTML Quiz</h1>
+                        <p>Ready for the Challenge?</p>
+                    </div>
+                    <button>START NOW <svg class="sm-display" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960"
+                            width="35">
+                            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" fill="white" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

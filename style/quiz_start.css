@@ -1,0 +1,129 @@
+.quiz-start-container {
+    border: 1px solid rgb(245 244 240);
+    border-radius: 10px;
+    background-color: rgb(247 247 247);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-start-left-container {
+    background-color: rgb(39 52 92);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.quiz-start-left-container img {
+    width: 80px;
+    object-fit: cover;
+}
+
+.quiz-category-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.quiz-category-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-category-container span {
+    width: 80px;
+    cursor: pointer;
+}
+
+.quiz-category-container span:hover {
+    color: white;
+}
+
+.active-category {
+    width: 100%;
+    border-left: 5px solid white;
+    color: white;
+}
+
+.quiz-start-right-container {
+    background-image: url('../img/brainbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.quiz-start-right-container button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0;
+    padding-left: 30px;
+    padding-right: 10px;
+    gap: 15px;
+    color: white;
+    border-radius: 10px;
+    border: unset;
+    background-color: rgb(255 77 13);
+}
+
+.quiz-start-right-container button:hover {
+    background-color: rgba(255, 78, 13, 0.845);
+}
+
+.sm-display {
+    display: block;
+}
+
+@media(max-width: 575px) {
+    .container {
+        height: 100vh;
+    }
+
+    .quiz-start-container {
+        border: unset;
+    }
+
+    .quiz-start-left-container {
+        border-radius: unset;
+    }
+
+    .quiz-start-right-container {
+        background-image: unset;
+    }
+
+    .quiz-start-right-container button {
+        left: 0;
+        right: 0;
+        bottom: 150px;
+        padding: 7px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sm-display {
+        display: none;
+    }
+}
+
+@media(max-width: 405px) {
+    .quiz-start-right-container button {
+        font-size: 14px;
+    }
+}
