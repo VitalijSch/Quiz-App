@@ -1,4 +1,7 @@
 .quiz-start-container {
+    height: 80%;
+    width: 800px;
+    display: flex;
     border: 1px solid rgb(245 244 240);
     border-radius: 10px;
     background-color: rgb(247 247 247);
@@ -6,6 +9,7 @@
 }
 
 .quiz-start-left-container {
+    width: 180px;
     background-color: rgb(39 52 92);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -53,6 +57,7 @@
 }
 
 .quiz-start-right-container {
+    margin: 50px;
     background-image: url('../img/brainbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,6 +67,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex: 1;
     position: relative;
     font-family: 'PT Sans', sans-serif;
 }
@@ -89,6 +95,39 @@
 
 .sm-display {
     display: block;
+}
+
+.button-container {
+    width: 800px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.left-arrow {
+    position: absolute;
+    margin-left: 180px;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgb(217 224 242);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.left-arrow:hover {
+    transform: scale(1.1);
+}
+
+.right-arrow {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    background-color: rgb(217 224 242);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.right-arrow:hover {
+    transform: scale(1.1);
 }
 
 @media(max-width: 575px) {
