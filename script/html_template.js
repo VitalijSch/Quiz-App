@@ -1,3 +1,20 @@
+function startHtmlTemplate(category) {
+    return /* html */ `
+        <div>
+            <h1>Welcome to<br>The Awesome ${category} Quiz</h1>
+            <p>Ready for the Challenge?</p>
+        </div>
+        <button onclick="startQuiz()">
+            START NOW
+            <svg class="sm-display" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960"
+            width="35">
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" fill="white" />
+            </svg>
+        </button>
+    `;
+}
+
+
 function renderHtmlTemplate(quiz) {
     return /* html */ `
         <h2 class="mb-30">${quiz.question}</h2>
@@ -23,11 +40,11 @@ function renderHtmlTemplate(quiz) {
 }
 
 
-function resultHtmlTemplate(quiz, points) {
+function resultHtmlTemplate(quiz, points, category) {
     return /* html */ `
         <div class="result-container">
             <img class="result-img" src="./img/brain_result.png" alt="brain png">
-            <h2><b>COMPLETE<br>HTML QUIZ</b></h2>
+            <h2><b>COMPLETE<br>${category} QUIZ</b></h2>
             <div class="score-container">
                 <span>YOUR SCORE</span>
                 <span>${points}/${quiz.length}</span>

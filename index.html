@@ -17,20 +17,20 @@
     <script src="./script/script.js"></script>
 </head>
 
-<body>
+<body onload="startPage('HTML')">
     <div class="quiz-start-container">
         <div class="quiz-start-left-container">
             <img src="./img/logo.png" alt="logo">
             <div class="quiz-category-container">
-                <div class="active-category"><span>HTML</span></div>
-                <div class="text-secondary"><span>CSS</span></div>
-                <div class="text-secondary"><span>JS</span></div>
-                <div class="text-secondary"><span>JAVA</span></div>
+                <div onclick="changeQuiz(0, event, 'HTML')" class="category active-category"><span>HTML</span></div>
+                <div onclick="changeQuiz(1, event, 'CSS')" class="category"><span>CSS</span></div>
+                <div onclick="changeQuiz(2, event, 'JS')" class="category"><span>JS</span></div>
+                <div onclick="changeQuiz(3, event, 'JAVA')" class="category"><span>JAVA</span></div>
             </div>
         </div>
         <div id="startContainer" class="quiz-start-right-container">
-            <div>
-                <h1>Welcome to<br>The Awesome HTML Quiz</h1>
+            <!-- <div>
+                <h1>Welcome to<br>The Awesome <span id="changeHeadline">HTML</span> Quiz</h1>
                 <p>Ready for the Challenge?</p>
             </div>
             <button onclick="startQuiz()">
@@ -39,7 +39,7 @@
                     width="35">
                     <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" fill="white" />
                 </svg>
-            </button>
+            </button> -->
         </div>
         <div id="questionContainer" class="question-container" style="display: none;"></div>
     </div>

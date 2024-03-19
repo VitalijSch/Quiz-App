@@ -31,6 +31,11 @@
     transition: transform 0.3s ease;
 }
 
+.quiz-answer-align span:last-child {
+    flex: 1;
+    text-align: start;
+}
+
 .quiz-answer-align:hover {
     transform: scale(1.1);
 }

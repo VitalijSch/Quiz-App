@@ -50,6 +50,10 @@
     color: white;
 }
 
+.category {
+    color: rgb(108 117 125);
+}
+
 .active-category {
     width: 100%;
     border-left: 5px solid white;
